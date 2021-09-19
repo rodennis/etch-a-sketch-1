@@ -1,13 +1,11 @@
+body {
+    justify-content: center;
+}
+
 #container {
-    height: 1200px;
-    width: 1200px;
     display: grid;
-    grid-column: span;
-    grid-row: span;
-    grid-template-columns: 100px 100px 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px 100px 100px;
-    border-width: 10px;
-    border-color: black;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
 }
 
 .sketch:hover {
