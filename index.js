@@ -1,13 +1,10 @@
-const container = document.querySelector("#container");
-
 const grid = prompt("Choose your grid size. (16 - 100")
 
-/**function gridSize()
-    if (grid <= 100) {
-        container.style.cssText = "grid-template-columns: repeat(" + grid + ", 2fr)"
-        container.style.cssText = "grid-template-rows: repeat(" + grid + ", 2fr)";
-    }**/
-
+const body = document.querySelector("#body")
+const container = document.querySelector("#container");
+    container.style.cssText = `grid-template-columns: repeat(${grid}, 2fr)`;
+    body.appendChild(container)
+    
     /** working on button and text input  */
 /**const gridSize = document.querySelector("#gridsize");
 
@@ -24,4 +21,3 @@ for (let i = 0; i < grid ** 2; i++) {
         event.target.style.cssText = "background-color: black";
 })
 }
-  

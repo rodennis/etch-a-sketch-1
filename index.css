@@ -6,8 +6,6 @@ body {
     margin-top: 25px;
     margin-right: 40px;
     display: inline-grid;
-    grid-template-columns: repeat(16, 10fr);
-    grid-template-rows: repeat(16, 10fr);
     border: 5px solid black;
     border-radius: 5px;
     height: 575px;
