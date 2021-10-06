@@ -1,4 +1,5 @@
 const submit = document.getElementById("submit");
+const reset = document.getElementById('reset')
 
 submit.addEventListener('click' , () => {
 
@@ -21,4 +22,10 @@ for (let i = 0; i < gridSize ** 2; i++) {
 })
 }
 }) 
+
+reset.addEventListener('click', () => {
+    const container = document.querySelector("#container");
+    const oldDiv = document.getElementsByClassName('sketch');
+    oldDiv.container.removeChild(oldDiv);
+})
 
