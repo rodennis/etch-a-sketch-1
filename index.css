@@ -1,12 +1,12 @@
 body {
-    background-color: black;
+    background-color:;
    
 }
 
 #container {
     margin-top: 80px;
     margin-right: 40px;
-    display: inline-grid;
+    display: grid;
     border: 20px solid red;
     border-radius: 10px;
     height: 575px;
@@ -21,14 +21,5 @@ body {
     background-color: black;
 }
 
-.input {
-    position: relative;
-    right: 370px;
-    top: 250px;
-}
 
-.title {
-    color: red;
-    font-size: 50px;
-}
 
