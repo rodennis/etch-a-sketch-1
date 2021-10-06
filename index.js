@@ -5,12 +5,15 @@ submit.addEventListener('click' , () => {
 
   const gridSize = document.getElementById("gridsize").value;
 
+  if (gridSize < 10 || gridSize > 100) {
+       throw new Error("Stop script")
+}
+
 /**statement for finding the size of the actual grid depending on users input */
 
     const container = document.querySelector("#container");
     container.style.cssText = `grid-template-columns: repeat(${gridSize}, 4fr)`;
     
-
 /**for loop for creating the # of divs for the gridsize */
 
 for (let i = 0; i < gridSize ** 2; i++) {
@@ -19,13 +22,15 @@ for (let i = 0; i < gridSize ** 2; i++) {
     container.appendChild(div);
     div.addEventListener("mouseover", function(e) {
         e.target.style.cssText = "background-color: black";
-})
-}
+
+    
+    })
+    }
 }) 
 
 reset.addEventListener('click', () => {
     const container = document.querySelector("#container");
-    const oldDiv = document.getElementsByClassName('sketch');
-    oldDiv.container.removeChild(oldDiv);
+    const oldDiv = document.querySelectorAll('.sketch');
+    oldDiv.forEach(oneGrid => oneGrid.style.backgroundColor = 'lightgray')
 })
 
