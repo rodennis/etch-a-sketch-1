@@ -4,6 +4,7 @@ const color = document.getElementById('color')
 
 submit.addEventListener('click' , () => {
 
+  document.querySelectorAll(".sketch").forEach(e => e.remove())
   const gridSize = document.getElementById("gridsize").value;
 
   if (gridSize < 10 || gridSize > 100) {
@@ -30,6 +31,7 @@ for (let i = 0; i < gridSize ** 2; i++) {
 
 color.addEventListener('click' , () => {
 
+    document.querySelectorAll(".sketch").forEach(e => e.remove());
     const gridSize = document.getElementById("gridsize").value;
   
     if (gridSize < 10 || gridSize > 100) {
