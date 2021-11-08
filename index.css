@@ -2,6 +2,7 @@ body {
     background: url("782955.jpeg");
     background-repeat: no-repeat; 
     background-size: cover;
+    height: 100vh;
    
 }
 
@@ -16,7 +17,6 @@ body {
     position: relative;
     top: 100px;
     margin-bottom: -100px;
-
 }
 
 .input {
@@ -100,3 +100,11 @@ body {
     }
 }
 
+@media  (max-width: 1250px) {
+  .input {
+      right: 0px;
+      top: 300px;
+     
+      
+  }
+}
